@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="d-flex justify-content-center">
+        <div class="navbar d-flex justify-content-lg-between">
+            <div class="logo">
+                <img src="assets/images/logo.svg" alt="logo">
+            </div>
+            <div class="burger-menu">
+                <img src="assets/images/icon-menu.svg" alt="burger-menu">
+            </div>
+            <div class="nav-links d-flex justify-content-lg-end gap-4">
+                <div class="burger-close">
+                    <img src="assets/images/icon-menu-close.svg" alt="close-menu">
+                </div>
+                <button>Home</button>
+                <button>New</button>
+                <button>Popular</button>
+                <button>Trending</button>
+                <button>Categories</button>
+            </div>
+        </div>
+    </nav>
+    <main class="m-auto mt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="section col-lg-8 col-md-12 d-flex flex-column justify-content-between gap-md-3 my-4 my-lg-0">
+                    <img src="assets/images/image-web-3-desktop.jpg" alt="web 3 image" class="img-desktop img-fluid">
+                    <img src="assets/images/image-web-3-mobile.jpg" alt="web 3 image" class="img-mobile img-fluid">
+                    <div class="row d-md-flex flex-md-column flex-lg-row">
+                        <h1 class="col-lg-6 pe-5 col-12">The Bright Future of Web 3.0?</h1>
+                        <div class="container-info col-lg-6 col-12">
+                            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                                But is it really fulfilling its promise?</p>
+                            <button class="btn btn-danger py-2 px-4 mt-4">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-new col-lg-4  col-md-12 py-4 px-5 d-flex flex-column justify-content-around gap-3">
+                    <h2>New</h2>
+                    <div class="new-info">
+                        <h4>Hydrogen VS Electric Cars</h4>
+                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                    <div class="new-info">
+                        <h4>The Downsides of AI Artistry</h4>
+                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                    </div>
+                    <div class="new-info">
+                        <h4>Is VC Funding Drying Up?</h4>
+                        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container-fluid mt-5">
+            <div class="row d-flex flex-column d-lg-flex flex-lg-row gap-3 gap-lg-0">
+                <div class="col-lg-4 col-12 d-flex gap-3">
+                    <img src="assets/images/image-retro-pcs.jpg" alt="image thumbnail" class="image-thumbnail">
+                    <div class="content d-flex flex-column justify-content-between gap-2">
+                        <span>01</span>
+                        <h5>Reviving Retro PCs</h5>
+                        <p>What happens when old PCs are given modern upgrades?</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 d-flex gap-3">
+                    <img src="assets/images/image-top-laptops.jpg" alt="image thumbnail" class="image-thumbnail">
+                    <div class="content d-flex flex-column justify-content-between gap-2">
+                        <span>02</span>
+                        <h5>Top 10 Laptops of 2022</h5>
+                        <p>Our best picks for various needs and budgets.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 d-flex gap-3">
+                    <img src="assets/images/image-gaming-growth.jpg" alt="image thumbnail" class="image-thumbnail">
+                    <div class="content d-flex flex-column justify-content-between gap-2">
+                        <span>03</span>
+                        <h5>The Growth of Gaming</h5>
+                        <p>How the pandemic has sparked fresh opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const burgerOpen = document.querySelector('.burger-menu')
+        const burgerClose = document.querySelector('.burger-close')
+        const navLinks = document.querySelector('.nav-links')
+
+        burgerOpen.addEventListener('click', ()=>{
+            navLinks.classList.toggle('open')
+        })
+
+        burgerClose.addEventListener('click', ()=>{
+            navLinks.classList.remove('open')
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
